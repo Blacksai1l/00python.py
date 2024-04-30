@@ -60,3 +60,6 @@ print(lenguaje.isupper()) #esta en mayusculas?
 print(lenguaje.count("t")) #contar cuantas t tiene
 print(lenguaje.isnumeric ()) #es un numero? boleana true o false
 print("2".isnumeric()) #es un numero? boleana true o false
+print(lenguaje.startswith ("py")) #empieza por "" boleana true o false
+print(lenguaje.startswith ("py")) #empieza por ""? boleana true o false
+print(lenguaje.startswith ("m")) #empieza por ""? boleana true o false
