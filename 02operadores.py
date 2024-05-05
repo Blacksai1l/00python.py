@@ -39,7 +39,7 @@ print("a" !="b") # distinto de
 print("a" !="a")
 print("a" < "b" < "c")
 
-print ()
+print () #para dejas espacios
 
 ##operadores lógicos
 
