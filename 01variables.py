@@ -1,6 +1,6 @@
 #vamos a ver las variables
 
-mi_variable= "mi string varialble"
+mi_variable= "mi string variable"
 print (mi_variable)
 mi_variable_booleana = True
 print (mi_variable_booleana)
