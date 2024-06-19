@@ -75,10 +75,13 @@ impresora_de_texto ("manue")
 print()
 print("Este programa sirve para sumar dos números")
 
-x= input ("¿cual es el primer numero que quieres sumar? ") 
-y= input("¿cual es el segundo numero que quieres sumar ? ")
 
-def suma (x,y):
-   print (x + y)
+
+def suma (num1 , num2 ):
+   print (num1  + num2)
+
+#defino dos variable para que el usuario introducza los nºs
+x= float (input ("¿cual es el primer numero que quieres sumar? ")) 
+y= float (input("¿cual es el segundo numero que quieres sumar ? "))
 
 suma (x , y)
