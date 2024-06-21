@@ -129,26 +129,32 @@ def impresoraPrimosdel1al100 ():
         
 impresoraPrimosdel1al100()
 
-            
-
-
-
-
-
-
-
-
-
-    
-       
-
-
 print()
 print()
 print()
+
 """
 INVIRTIENDO CADENAS
 Crea un programa que invierta el orden de una cadena de texto
 sin usar funciones propias del lenguaje que lo hagan de forma automática.
 - Si le pasamos "Hola mundo" nos retornaría "odnum aloH"
 """
+mi_string= "Hola mundo"
+mi_string_invertida= mi_string [::-1]
+
+print(mi_string)
+print (mi_string_invertida)
+
+# la forma de hacerlo manulmente es asi
+
+def invertir(text):
+    lenText= len(text) # me dice la longitud del texto en este caso hola 4
+    text_invertida= "" # aqui voy a ir guardando lo que me va devolviendo el for
+    for n in range (0 , lenText):
+        text_invertida += text [lenText - n -1] #aqui voy asignando cada letra de mi  nuevo texto invertido
+    print (text_invertida)
+    return text_invertida
+    
+invertir ("hola")
+
+
