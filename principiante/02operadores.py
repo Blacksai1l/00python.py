@@ -8,8 +8,9 @@ print(3 / 2)   # division(/)
 print(3 ** 2)  # exponente(**)
 print(2 * 3)   # multiplicacion(*)
 print(3 ** 3)  # exponente(**)
-print(10 % 4)   # operador de modulo(%) 10/4=4*2--> 8 y me llevo 2
+print(10 % 4)   # operador de modulo(%) 10/4=4*2--> 8 y me llevo 2. En resumen el operador modulo nos devuelve el resto de una division entre dos numeros
 print(10 % 3)   # operador de modulo(%) 10/3=3*3--> 9 y me llevo 1
+print (9 % 3)   #sirve para saber sin el numero 9 es multiplo de 3 cuando da 0
 print(3 // 2)  # aproximar la division a un numero entero aproximado
 print(7 // 2)  # aproximar la division a un numero entero aproximado
 print("hola "+"python ") #se pueden sumar cardenas de texto

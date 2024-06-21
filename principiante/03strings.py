@@ -50,7 +50,11 @@ print(lenguaje_cortado)
 lenguaje_reverso= lenguaje[::-1]
 print(lenguaje_reverso)
 
-### fubnciones del sistema ###
+#### ordenas las letras en orden alfabetico SORTED ###
+txt = sorted(lenguaje)
+print (txt)
+
+### funciones del sistema ###
 
 print(lenguaje.capitalize()) #poner en mayusculas la primera letra
 print(lenguaje.upper()) #poner en mayusculas todas las letras
