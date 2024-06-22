@@ -1,0 +1,6 @@
+
+Mi nombre es Manolete
+Mi apellido es Torete
+tengo 37 años
+mi lenguaje favorito es Python
+tambien me gustaria aprender Rust

@@ -1,0 +1,12 @@
+{
+  "name": "Manolete",
+  "surname": "Toreto",
+  "age": 37,
+  "languajes": [
+    "Python",
+    "Rust",
+    "C++",
+    "JavaScript"
+  ],
+  "team": "Betis"
+}
