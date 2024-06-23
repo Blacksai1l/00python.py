@@ -1,0 +1,11 @@
+C:\Users\Manu\Documents\GitHub\PROYECTOS\rust\target\debug\deps\libtextwrap-81c79b758534aba5.rmeta: C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\lib.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\indentation.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\splitting.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\core.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\core\optimal_fit.rs
+
+C:\Users\Manu\Documents\GitHub\PROYECTOS\rust\target\debug\deps\libtextwrap-81c79b758534aba5.rlib: C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\lib.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\indentation.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\splitting.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\core.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\core\optimal_fit.rs
+
+C:\Users\Manu\Documents\GitHub\PROYECTOS\rust\target\debug\deps\textwrap-81c79b758534aba5.d: C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\lib.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\indentation.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\splitting.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\core.rs C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\core\optimal_fit.rs
+
+C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\lib.rs:
+C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\indentation.rs:
+C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\splitting.rs:
+C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\core.rs:
+C:\Users\Manu\.cargo\registry\src\index.crates.io-6f17d22bba15001f\textwrap-0.13.4\src\core\optimal_fit.rs:
