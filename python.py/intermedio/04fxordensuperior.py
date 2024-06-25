@@ -38,7 +38,7 @@ print()
 ### funciones de orden superior que ya existen en el propio lenguaje " built - in" ###
 
 numeros= [2,5,10,21,30]
-
+print (numeros)
 #MAP (fx, iterable) 
 """
 a partir de una lista iterable retorna otra lista iterable modificada segun una funcion
@@ -58,7 +58,7 @@ print()
 
 # FILTER (fx , iterable)
 """
-a partir de una lista iterable retorna otra lista iterable cuando se cimple una funcion por cada iterable
+a partir de una lista iterable retorna otra lista iterable cuando se cumple una funcion por cada iterable
 """
 def filtro (numero):
     if numero > 6:

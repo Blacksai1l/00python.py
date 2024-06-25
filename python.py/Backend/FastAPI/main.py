@@ -28,3 +28,11 @@ async def url ():
 # Documentacion de Swagger: http:127.0.0.1:8000/docs
 # Documentacion de Redocly: http:127.0.0.1:8000/redoc
 
+"""
+Normalmente usas:
+
+POST: para crear datos.
+GET: para leer datos.
+PUT: para actualizar datos.
+DELETE: para borrar datos.
+"""
