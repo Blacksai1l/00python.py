@@ -13,9 +13,18 @@ async def root ():
 
     return "hola, FasAPI!"
 
-# vamos ahora a levantar el servidos que nos proporciona fastapi
+"""
+vamos ahora a levantar el servidos que nos proporciona fastapi
+para ello nos vamos en la consola al fichero donde estamos picando el proyectoç
+en este caspo seria python.py/Backend/FastAPI
+Despues metemos el comando: uvicorn main:app --reload
 
+"""
 @app.get ("/url")
 async def url (): 
     return { "url" : "https://mouredev.com/python" } #esto lo ponemos en formato .json... en 
                                                      #en general la forma de la informacion en web es .json
+
+# Documentacion de Swagger: http:127.0.0.1:8000/docs
+# Documentacion de Redocly: http:127.0.0.1:8000/redoc
+
