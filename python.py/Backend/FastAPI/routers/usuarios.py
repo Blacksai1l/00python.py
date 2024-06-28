@@ -1,11 +1,11 @@
 # CREAMOS LA API
 
-from fastapi import FastAPI
+from fastapi import APIRouter , HTTPException
 
 
-app = FastAPI ()
+router = APIRouter ()
 
-@app.get ("/")
+@router.get ("/")
 def raiz ():
     return  { " mensaje" : "hola fastapi " }
 
@@ -22,11 +22,11 @@ no va a funcionar porque se lo estmaos poniendo otra vez en la raiz
 # INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 
 # PATH 
-@app.get ("/2")
+@router.get ("/2")
 def raiz2 ():
     return  { " mensaje" : "hola fastapi 2" }
 
-@app.get ("/me")
+@router.get ("/me")
 def miusurio ():
     return  { " mensaje" : "usuario actual" }
 
@@ -44,7 +44,7 @@ usuarios_db= [Usuario (id = 1 , nombre= "Cabesa" , apellido= "Porta" , contrase�
               Usuario (id= 2, nombre= "Migue" , apellido= "Suarez" , contraseña= "5premio" ,edad= 31),
               Usuario (id= 3, nombre= "Antonio" , apellido= "Huerta" , contraseña= "55premios" ,edad= 32)]
 
-@app.get ("/usuariosoriginal")
+@router.get ("/usuariosoriginal")
 def totaldeusuariosoriginal ():
     return [
  {"id": 1,"nombre": "Cabesa","apellido": "Porta","contraseña": "5","edad": 30}, 
@@ -52,7 +52,7 @@ def totaldeusuariosoriginal ():
  {"id": 3,"nombre": "Antonio ","apellido": "Huerta","contraseña": "55premios","edad": 32}
  ] 
 
-@app.get ("/usuarios")
+@router.get ("/usuarios")
 def totaldeusuarios ():
     return usuarios_db 
 
@@ -62,14 +62,14 @@ def userclass ():
     return Usuario (id = 1 , nombre= "Cabesa" , apellido= "Porta" , contraseña= "5" , edad= 30)
 """
 
-@app.get ("/usuariosdb")
+@router.get ("/usuariosdb")
 def userclass ():
     return usuarios_db
 
 #llamar por path
 #http://127.0.0.1:8000/usuario/1
 
-@app.get ("/usuario/{id}")
+@router.get ("/usuario/{id}")
 def userid (id: int):
     miusuario= filter  ( lambda usuario : usuario.id == id , usuarios_db ) 
     try:
@@ -89,7 +89,7 @@ el filtro es numero > 10
 numero: es el parametro  
 de una lista de numeros, me hace otra lista con los numeros que sea mayor de 10
 """
-@app.get ("/userquery/")
+@router.get ("/userquery/")
 def useridquery (id: int):
     miusuario= filter  ( lambda usuario : usuario.id == id , usuarios_db ) 
     try:
@@ -99,14 +99,23 @@ def useridquery (id: int):
     
 # añadir usuario a mi db
 # http://127.0.0.1:8000/nuevousuario y rellenar la parte del cuerpo requerido en formato json
-@app.post ("/nuevousuario/")
+@router.post ("/nuevousuario/", status_code=201)
 async def addusuario (usuario1: Usuario):
-    usuarios_db.append (usuario1)
-    return usuario1 # si no ponemos esto sigue funcionando pero nos devuelve un null
+    usuariodb : Usuario 
+    encontrado= False
+    for usuariodb in usuarios_db:
+        if usuario1.id == usuariodb.id:
+            encontrado= True
+            raise HTTPException (status_code= 404, detail= "no se ha podido añadir porque el id del usario ya existe." )
+        
+             
+    if not encontrado:
+        usuarios_db.append (usuario1)
+        return usuario1 # si no ponemos esto sigue funcionando pero nos devuelve un null
     
 #actualizar un usuario de mi db 
 # http://127.0.0.1:8000/cambiousario
-@app.put ("/cambiousario/")
+@router.put ("/cambiousario/")
 async def cambiousuario (usuario2 : Usuario):
     usuariodb : Usuario
     encontrado= False
@@ -123,7 +132,7 @@ async def cambiousuario (usuario2 : Usuario):
 
 # borrar un usuario de mi db
 # http://127.0.0.1:8000/borrarusuario/4 (se borra el usuario 4 de mi base de datos)
-@app.delete ("/borrarusuario/{id}")
+@router.delete ("/borrarusuario/{id}")
 async def borrarusuario (id: int):
     for indice, usuariodb in enumerate (usuarios_db):
         
