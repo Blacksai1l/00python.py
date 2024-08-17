@@ -24,7 +24,7 @@ async def root ():
 """
 vamos ahora a levantar el servidos que nos proporciona fastapi
 para ello nos vamos en la consola al fichero donde estamos picando el proyectoç
-en este caspo seria python.py/Backend/FastAPIc
+en este caspo seria python.py/Backend/FastAPI
 Despues metemos el comando: uvicorn main:app --reload
 
 """
