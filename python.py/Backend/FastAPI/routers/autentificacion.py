@@ -1,3 +1,7 @@
+# autentificar es que la plataforma identifica al usuario
+# es algo diferente a autorizar 
+#existen standars para la autenticacion como oAuth2
+
 from fastapi import FastAPI 
 from pydantic import BaseModel
 
